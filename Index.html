@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;html lang="es"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;PB Musica&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body { background-color: #111; color: #f5f5f5; line-height: 1.6; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header { background: #000; padding: 20px 0; position: sticky; top: 0; z-index: 100; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header nav { display: flex; justify-content: center; gap: 40px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header nav a { color: #f5f5f5; text-decoration: none; font-weight: 700; transition: color 0.3s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header nav a:hover { color: #ff0055; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h1, h2 { margin-bottom: 20px; font-weight: 700; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>p { margin-bottom: 15px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Inicio */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#inicio { display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; height: 100vh; background: url('https://via.placeholder.com/1600x900/111/ff0055?text=PB+Musica') no-repeat center/cover; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#inicio h1 { font-size: 3rem; color: #fff; text-shadow: 2px 2px 8px #000; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#inicio p { font-size: 1.2rem; color: #ddd; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Sobre */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#sobre { background-color: #1a1a1a; text-align: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#sobre img { width: 100%; max-width: 600px; display: block; margin: 20px auto; border-radius: 10px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Galería */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#galeria img { width: 100%; border-radius: 10px; transition: transform 0.3s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#galeria img:hover { transform: scale(1.05); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Blog */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#blog article { margin-bottom: 40px; background: #222; padding: 20px; border-radius: 10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#blog article h3 { margin-bottom: 10px; color: #ff0055; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Contacto */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#contacto form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#contacto input, #contacto textarea { padding: 10px; border-radius: 5px; border: none; font-size: 1rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#contacto button { padding: 10px; border: none; border-radius: 5px; background: #ff0055; color: #fff; font-weight: 700; cursor: pointer; transition: background 0.3s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#contacto button:hover { background: #e60044; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer { text-align: center; padding: 20px; background: #000; color: #777; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;header&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#galeria"&gt;Artistas&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#blog"&gt;Blog&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="inicio"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;PB Musica&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;El sello discográfico que impulsa el talento musical&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="sobre"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Sobre PB Musica&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;PB Musica es un sello discográfico comprometido con descubrir y potenciar artistas con estilo único y visión innovadora. Nuestro objetivo es crear música que trascienda fronteras y emociones.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/600x400/222/ff0055?text=Estudio+Musical" alt="Estudio musical"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="galeria"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Artistas Destacados&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/400x400/333/ff0055?text=Artista+1" alt="Artista 1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/400x400/444/ff0055?text=Artista+2" alt="Artista 2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/400x400/555/ff0055?text=Artista+3" alt="Artista 3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;img src="https://via.placeholder.com/400x400/666/ff0055?text=Artista+4" alt="Artista 4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="blog"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Noticias&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;article&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h3&gt;Lanzamiento del nuevo sencillo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Estamos emocionados de anunciar el lanzamiento del nuevo sencillo de nuestro artista estrella, que promete revolucionar la escena musical.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;article&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h3&gt;Concierto exclusivo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;PB Musica presenta un concierto íntimo para fans, con invitados especiales y sorpresas musicales.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="contacto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contacto&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;form id="contactForm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="nombre" placeholder="Tu nombre" required&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;input type="email" name="email" placeholder="Tu email" required&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;textarea name="mensaje" rows="5" placeholder="Tu mensaje" required&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&amp;copy; 2025 PB Musica. Todos los derechos reservados.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const form = document.getElementById('contactForm');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>form.addEventListener('submit', (e) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>e.preventDefault();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>alert('Gracias por tu mensaje. ¡PB Musica se pondrá en contacto contigo pronto!');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>form.reset();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
